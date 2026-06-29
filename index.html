@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erikliima | Kliimaseadmed ja paigaldus</title>
+  <meta name="description" content="Erikliima – kliimaseadmed, õhksoojuspumbad, ventilatsioon ja paigaldus Eestis." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Erikliima</a>
+    <nav>
+      <a href="#tooted">Tooted</a>
+      <a href="#teenused">Teenused</a>
+      <a href="#kontakt">Kontakt</a>
+      <button id="cartButton" class="cart-btn">Ostukorv <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Kliima • soojuspumbad • ventilatsioon</p>
+        <h1>Mugav sisekliima koju, kontorisse ja töökotta.</h1>
+        <p class="hero-text">Erikliima aitab valida sobiva lahenduse, tarnida seadmed ja korraldada paigalduse.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#tooted">Vaata tooteid</a>
+          <a class="secondary" href="#kontakt">Küsi pakkumist</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Kiire päring</h3>
+        <p>Saada soovitud ruumi suurus, asukoht ja vajadus. Vastame personaalse pakkumisega.</p>
+        <a href="mailto:info@erikliima.ee">info@erikliima.ee</a>
+      </div>
+    </section>
+
+    <section id="tooted" class="section">
+      <div class="section-head">
+        <p class="eyebrow">E-pood</p>
+        <h2>Populaarsed tooted</h2>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section id="teenused" class="section services">
+      <div>
+        <p class="eyebrow">Teenused</p>
+        <h2>Paigaldus ja hooldus</h2>
+        <p>Lisaks seadmete müügile saab pakkuda paigaldust, hooldust ja konsultatsiooni.</p>
+      </div>
+      <div class="service-list">
+        <div><strong>Seadme valik</strong><span>Õige võimsus ja tüüp vastavalt ruumile.</span></div>
+        <div><strong>Paigaldus</strong><span>Korralik ja puhas paigaldus kliendi juures.</span></div>
+        <div><strong>Hooldus</strong><span>Filtrid, kontroll, puhastus ja töökindlus.</span></div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <div>
+        <p class="eyebrow">Kontakt</p>
+        <h2>Küsi pakkumist</h2>
+        <p>Kirjuta, mida vajad, ja lisame sobivad tooted või teenused pakkumisse.</p>
+      </div>
+      <form action="mailto:info@erikliima.ee" method="post" enctype="text/plain">
+        <input name="nimi" placeholder="Nimi" />
+        <input name="email" placeholder="E-post" />
+        <textarea name="sonum" placeholder="Kirjelda, mida vajad"></textarea>
+        <button type="submit">Saada päring</button>
+      </form>
+    </section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Ostukorv</h3>
+      <button id="closeCart">×</button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-total">Kokku: <strong id="cartTotal">0 €</strong></div>
+    <button class="checkout">Saada päring ostukorvi kohta</button>
+  </aside>
+
+  <footer>
+    <strong>Erikliima</strong>
+    <span>© 2026 Kõik õigused kaitstud</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
